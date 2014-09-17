@@ -508,6 +508,15 @@ a:focus {
   color: #1abc9c;
 }
 
+/* concrete */
+.theme-base-85 .masthead {
+  background-color: #859596;
+}
+.theme-base-85 .container a,
+.theme-base-85 .related-posts li a:hover {
+  color: #859596;
+}
+
 
 .logo {
   background: #90a959 url('/public/ryf.png') no-repeat center -70px;
