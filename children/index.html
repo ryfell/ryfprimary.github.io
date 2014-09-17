@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+
+  
+
+{% capture text %}{% include_relative text.md %}{% endcapture %}
+{{ text | markdownify }}
