@@ -5,5 +5,5 @@ layout: default
 
   
 
-{% capture text %}{% include_relative text.md %}{% endcapture %}
+{% capture text %}{% include mv parents/text.md _includes/parents.md.md %}{% endcapture %}
 {{ text | markdownify }}
