@@ -1,6 +1,0 @@
-# About Rhos y Fedwen
-
-
-
-
-
