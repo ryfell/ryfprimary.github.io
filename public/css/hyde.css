@@ -311,7 +311,8 @@ a:focus {
   padding: 40px 20px;
 }
 .container {
-  width: 900px;
+  max-width: 900px;
+  width: 80%;
   margin-left: 110px;
   padding-top: 30px;
 }
