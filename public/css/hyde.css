@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-weight: 600;
   line-height: 1.25;
+  font-family: 'Cinzel', serif;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -312,6 +313,7 @@ a:focus {
 .container {
   width: 900px;
   margin-left: 110px;
+  padding-top: 30px;
 }
 /* Center container in available real estate * /
 @media (min-width: 990px) {
@@ -823,4 +825,18 @@ a:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.tweetme {
+  font-weight: 300;
+  font-size: 19px;
+  vertical-align: middle;
+}
+
+.tweetme iframe {
+  vertical-align: middle;
+}
+
+.content table td {
+  padding-right:30px;
 }
