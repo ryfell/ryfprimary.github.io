@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.tags.main limit:2 %}
+  {% for post in site.tags.news limit:5 %}
   <div class="post">
     <h1>
       <a href="{{ post.url }}">
