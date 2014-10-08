@@ -5,7 +5,8 @@
 
   <body class="theme-base-1a">
 
-    <header class="logo masthead">
+    <header class="masthead">
+      <a href="/"><div class="logo"></div></a>
       <div class="masthead-inner">
         <h1>{{ site.title }}</h1>
         <p class="lead">{{ site.description }}</p>
@@ -22,11 +23,67 @@
           <p>&copy; 2014. {{ site.author.name }} All rights reserved.</p>
         </div>
       </div>
+      
     </header>
+<div id='cssmenu'>
+<ul>
+   <li class="{% if page.url contains 'ourschool' %}active{% endif %}  has-sub"><a href='#'><span>OUR SCHOOL</span></a>
+      <ul>
+         <li class="{% if page.url contains 'ourschool/contactdetails' %}active{% endif %}"><a href='/ourschool/contactdetails'><span>Contact details</span></a></li>
+         <li class="{% if page.url contains 'ourschool/photosofschool' %}active{% endif %}"><a href='/ourschool/photosofschool'><span>Photos of School</span></a></li>
+         <li class="{% if page.url contains 'ourschool/uniform' %}active{% endif %}"><a href='/ourschool/uniform'><span>Uniform</span></a></li>
+         <li class="{% if page.url contains 'ourschool/schooltimes' %}active{% endif %}"><a href='/ourschool/schooltimes'><span>School Times</span></a></li>
+         <li class="{% if page.url contains 'ourschool/afterschoolclubs' %}active{% endif %}"><a href='/ourschool/afterschoolclubs'><span>After School Clubs</span></a></li>
+         <li class="{% if page.url contains 'ourschool/swimmingtimetable' %}active{% endif %}"><a href='/ourschool/swimmingtimetable'><span>Swimming Timetable</span></a></li>
+         <li class="{% if page.url contains 'ourschool/policies' %}active{% endif %}"><a href='/ourschool/policies'><span>Policies</span></a></li>
+         <li class="{% if page.url contains 'ourschool/aims' %}active{% endif %}"><a href='/ourschool/aims'><span>Aims</span></a></li>
+         <li class="{% if page.url contains 'ourschool/handbooks' %}active{% endif %}"><a href='/ourschool/handbooks'><span>Handbooks</span></a></li>
+      </ul>
+   </li>
+   <li class="{% if page.url contains 'staff' %}active{% endif %} has-sub"><a href='#'><span>STAFF</span></a>
+   <ul>
+               <li class="{% if page.url contains 'staff/teachers' %}active{% endif %}"><a href='/staff/teachers'><span>Teachers names & Year Groups</span></a></li>
+               <li class="{% if page.url contains 'staff/roles' %}active{% endif %}"><a href='/staff/roles'><span>Roles</span></a></li>
+            </ul>
+   </li>
+   <li class="{% if page.url contains 'classes' %}active{% endif %} has-sub"><a href='#'><span>CLASSES</span></a>
+   <ul>
+               <li class="{% if page.url contains 'classes/nursery' %}active{% endif %}"><a href='/classes/nursery'><span>Nursery - Miss Whitehouse</span></a></li>
+               <li class="{% if page.url contains 'classes/reception' %}active{% endif %}"><a href='/classes/reception'><span>Reception  - Mrs Townsend</span></a></li>
+               <li class="{% if page.url contains 'classes/year1' %}active{% endif %}"><a href='/classes/year1'><span>Years 1 / 2 – Mrs Martin</span></a></li>
+               <li class="{% if page.url contains 'classes/year3' %}active{% endif %}"><a href='/classes/year3'><span>Year 3 – Miss Jones</span></a></li>
+               <li class="{% if page.url contains 'classes/year4' %}active{% endif %}"><a href='/classes/year4'><span>Years4/5 – Miss Scott</span></a></li>
+               <li class="{% if page.url contains 'classes/year5' %}active{% endif %}"><a href='/classes/year5'><span>Years 5/6 – Mr Pinch</span></a></li>
+            </ul>
+   </li>
+   <li class="{% if page.url contains 'news' %}active{% endif %} has-sub"><a href='#'><span>NEWS</span></a>
+   <ul>
+               <li class="{% if page.url contains 'news/newsletter' %}active{% endif %}"><a href='/news/newsletter'><span>Newsletter</span></a></li>
+               <li class="{% if page.url contains 'news/events' %}active{% endif %}"><a href='/news/events'><span>Events</span></a></li>
+               <li class="{% if page.url contains 'news/photos' %}active{% endif %}"><a href='/news/photos'><span>Photos</span></a></li>
+            </ul>
+   </li>
+   <li class="{% if page.url contains 'calendar' %}active{% endif %} "><a href='/calendar'><span>CALENDAR</span></a></li>
+   <li class="{% if page.url contains 'schoolcouncil' %}active{% endif %} has-sub"><a href='#'><span>SCHOOL COUNCIL</span></a>
+   <ul>
+               <li class="{% if page.url contains 'schoolcouncil/members' %}active{% endif %}"><a href='/schoolcouncil/members'><span>Members</span></a></li>
+               <li class="{% if page.url contains 'schoolcouncil/photos' %}active{% endif %}"><a href='/schoolcouncil/photos'><span>Photos</span></a></li>
+            </ul>
+   </li>
+   <li class="{% if page.url contains 'ecocouncil' %}active{% endif %} has-sub"><a href='#'><span>ECO COUNCIL</span></a>
+   <ul>
+               <li class="{% if page.url contains 'ecocouncil/members' %}active{% endif %}"><a href='/ecocouncil/members'><span>Members </span></a></li>
+               <li class="{% if page.url contains 'ecocouncil/photos' %}active{% endif %}"><a href='/ecocouncil/photos'><span>Photos</span></a></li>
+            </ul>
+   </li>
+   <li class="{% if page.url contains 'governors' %}active{% endif %} "><a href='/governors'><span>GOVERNORS</span></a></li>
 
+</ul>
+</div>
     <div class="content container">
+<!--
     <div class="menu">
-<!--<input type="submit" value="Orange" class="orange-flat-button">
+<input type="submit" value="Orange" class="orange-flat-button">
 <input type="submit" value="Carrot" class="carrot-flat-button">
 <input type="submit" value="Pumpkin" class="pumpkin-flat-button">
 <input type="submit" value="Alizarin" class="alizarin-flat-button">
@@ -46,29 +103,45 @@
  <input type=type="submit" value="Concrete Blue" class="concrete-flat-button">
 <input type="submit" value="Asbestos" class="asbestos-flat-button">
 <input type="submit" value="Graphite" class="graphite-flat-button">
--->
 
 <a href="/ourschool"><input type="submit" value="OUR SCHOOL" class="flat-button-base carrot-flat-button"></a>
 
-<a href="/children"><input type="submit" value="CHILDREN" class="flat-button-base alizarin-flat-button"></a>
+<a href="/staff"><input type="submit" value="STAFF" class="flat-button-base alizarin-flat-button"></a>
 
-<a href="/parents"><input type="submit" value="PARENTS" class="flat-button-base turquoise-flat-button"></a>
+<a href="/classes"><input type="submit" value="CLASSES" class="flat-button-base turquoise-flat-button"></a>
 
-<a href="/staff"><input type="submit" value="STAFF" class="flat-button-base emerald-flat-button"></a>
+<a href="/news"><input type="submit" value="NEWS" class="flat-button-base emerald-flat-button"></a>
 
 <a href="/calendar"><input type="submit" value="CALENDAR" class="flat-button-base peter-river-flat-button"></a>
 
-<a href="/news"><input type="submit" value="SCHOOL NEWS" class="flat-button-base amethyst-flat-button"></a>
+<a href="/schoolcouncil"><input type="submit" value="SCHOOL COUNCIL" class="flat-button-base amethyst-flat-button"></a>
 
- <a href="/governors"><input type="submit" value="GOVERNORS" class="flat-button-base wet-asphalt-flat-button"></a>
+ <a href="/ecocouncil"><input type="submit" value="ECO COUNCIL" class="flat-button-base wet-asphalt-flat-button"></a>
 
- <a href="/partners"><input type="submit" value="PARTNERS" class="flat-button-base concrete-flat-button"></a>
+ <a href="/governors"><input type="submit" value="GOVERNORS" class="flat-button-base concrete-flat-button"></a>
 
-<a href="/jobs"><input type="submit" value="JOBS" class="flat-button-base graphite-flat-button"></a>
     </div>
-    <hr/>
+-->
+
       {{ content }}
+      <span>
+
+
+      </span>
     </div>
 
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/js/menu.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55176073-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>

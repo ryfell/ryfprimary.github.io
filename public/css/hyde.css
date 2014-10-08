@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-weight: 600;
   line-height: 1.25;
+  font-family: 'Cinzel', serif;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -264,14 +265,20 @@ a:focus {
   color: inherit;
 }
 
-/* Responsive masthead */
+.masthead-inner {
+  padding: 40px;
+  margin-left: 70px;
+}
+
+/* Responsive masthead * /
 @media (min-width: 768px) {
   .masthead-inner {
     padding: 40px;
   }
 }
+
 @media (min-width: 990px) {
-  /* Fix the masthead to the side for impact and awesomeness */
+  /* Fix the masthead to the side for impact and awesomeness * /
   .masthead {
     position: fixed;
     top: 0;
@@ -294,7 +301,7 @@ a:focus {
   }
 }
 
-
+*/
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
@@ -304,8 +311,13 @@ a:focus {
 .content {
   padding: 40px 20px;
 }
-
-/* Center container in available real estate */
+.container {
+  max-width: 900px;
+  width: 80%;
+  margin-left: 110px;
+  padding-top: 30px;
+}
+/* Center container in available real estate * /
 @media (min-width: 990px) {
   .content {
     padding: 60px 0;
@@ -317,7 +329,7 @@ a:focus {
   }
 }
 
-
+ */
 /*
  * Posts
  *
@@ -507,11 +519,12 @@ a:focus {
 
 /* turquoise */
 .theme-base-1a .masthead {
-  background-color: #1abc9c;
+  background-color: #00AA89;
+  background: #00AA89 url('/public/images/bg.png');
 }
 .theme-base-1a .container a,
 .theme-base-1a .related-posts li a:hover {
-  color: #1abc9c;
+  color: #00AA89;
 }
 
 /* concrete */
@@ -525,7 +538,17 @@ a:focus {
 
 
 .logo {
-  background: #90a959 url('/public/ryf.png') no-repeat center -70px;
+  background: url('/public/ryf.png') no-repeat right -70px;
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  max-width: 1025px;
+}
+
+@media all and (max-width: 650px){
+  .logo {
+    display: none;
+  }
 }
 
 .menu {
@@ -656,7 +679,7 @@ a:focus {
 /* #Turquoise Flat Button
 ==================================================*/
 .turquoise-flat-button {
-  background: #1abc9c;
+  background: #00AA89;
   border-bottom: 2px solid #12ab8d;
   -webkit-box-shadow: inset 0 -2px #12ab8d;
   box-shadow: inset 0 -2px #12ab8d;
@@ -804,4 +827,18 @@ a:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.tweetme {
+  font-weight: 300;
+  font-size: 19px;
+  vertical-align: middle;
+}
+
+.tweetme iframe {
+  vertical-align: middle;
+}
+
+.content table td {
+  padding-right:30px;
 }
